@@ -1,0 +1,46 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let jugador = {
+            nombre: "Lucía",
+            puntos: 50,
+            nivel: 1
+        };
+        alert("Puntaje inicial del jugador:" +"\n"+ "nombre: "+ jugador.nombre + "\n" + "puntos: " +jugador.puntos + "\n" + "nivle: "+ jugador.nivel + "\n");
+
+        quieres = parseInt(prompt("Quieres subir 100 puntos?: " + "\n" + "1) Si" + "\n" + "2) No"));
+
+        if (quieres === 1){
+            jugador.puntos = 150
+            alert ("ahora tenes 150 puntas :D, congratulation, ahora tus estadisticas son estas:" + "\n" + "nombre: "+ jugador.nombre + "\n" + "puntos: " +jugador.puntos + "\n" + "nivle: "+ jugador.nivel + "\n");
+        } else if(quieres === 2){
+            alert ("perdiste 100 puntos bro :'v, ahora tus estadisticas son estas:" + "\n" + "nombre: "+ jugador.nombre + "\n" + "puntos: " +jugador.puntos + "\n" + "nivle: "+ jugador.nivel + "\n");
+        }else{
+            alert("Opción inválida. Debes elegir 1 o 2.");
+        }
+
+        levelup = parseInt(prompt("Quieres subir al nivel 2?: " + "\n" + "1) Si" + "\n" + "2) No"));
+
+        if (levelup === 1){
+            jugador.nivel = 2
+            alert ("Subiste al nivel 2 :D, ahora tus estadisticas son estas:" + "\n" + "nombre: "+ jugador.nombre + "\n" + "puntos: " +jugador.puntos + "\n" + "nivle: "+ jugador.nivel + "\n");
+        } else if(levelup === 2){
+            alert ("No subiste de nivel bro :'v, ahora tus estadisticas son estas:" + "\n" + "nombre: "+ jugador.nombre + "\n" + "puntos: " +jugador.puntos + "\n" + "nivle: "+ jugador.nivel + "\n");
+        }else{
+            alert("Opción inválida. Debes elegir 1 o 2.");
+        }
+        
+        alert ("Fin del juego :D, tus estadisticas finales son estas:" + "\n" + "nombre: " + jugador.nombre + "\n" + "puntos: " + jugador.puntos + "\n" + "nivle: " + jugador.nivel + "\n");
+
+    </script>
+    
+</body>
+</html>
+```
